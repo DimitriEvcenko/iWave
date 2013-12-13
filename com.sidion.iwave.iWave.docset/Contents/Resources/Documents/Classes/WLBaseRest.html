@@ -1,0 +1,1051 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>WLBaseRest Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">iWave </a></h1>
+				<a id="developerHome" href="../index.html">sidion</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">WLBaseRest Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/vacationRestService">&nbsp;&nbsp;&nbsp;&nbsp;vacationRestService</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/doLoginWithParameters:">&nbsp;&nbsp;&nbsp;&nbsp;- doLoginWithParameters:</option>
+	
+	<option value="//api/name/doUserProfileRequest:aUser:">&nbsp;&nbsp;&nbsp;&nbsp;- doUserProfileRequest:aUser:</option>
+	
+	<option value="//api/name/doVacationInformationRequest">&nbsp;&nbsp;&nbsp;&nbsp;- doVacationInformationRequest</option>
+	
+	<option value="//api/name/relationshipFromDictionary:andManagedObjectContext:andRelation:">&nbsp;&nbsp;&nbsp;&nbsp;- relationshipFromDictionary:andManagedObjectContext:andRelation:</option>
+	
+	<option value="//api/name/restService:didFinishRestCallWithErrors:andDescription:">&nbsp;&nbsp;&nbsp;&nbsp;- restService:didFinishRestCallWithErrors:andDescription:</option>
+	
+	<option value="//api/name/restService:didFinishRestCallWithResponse:andDescription:">&nbsp;&nbsp;&nbsp;&nbsp;- restService:didFinishRestCallWithResponse:andDescription:</option>
+	
+	<option value="//api/name/saveNewsMessagesFromWLLoginResponse:">&nbsp;&nbsp;&nbsp;&nbsp;- saveNewsMessagesFromWLLoginResponse:</option>
+	
+	<option value="//api/name/saveOrUpdateUserFromUrl">&nbsp;&nbsp;&nbsp;&nbsp;- saveOrUpdateUserFromUrl</option>
+	
+	<option value="//api/name/saveOrUpdateUserFromWLLoginResponse:">&nbsp;&nbsp;&nbsp;&nbsp;- saveOrUpdateUserFromWLLoginResponse:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Delegate to Parent">Delegate to Parent</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Calling Rest-Service">Calling Rest-Service</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling Core Data">Handling Core Data</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Respond to Rest Service Protocol">Respond to Rest Service Protocol</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling Vacation Rest-Service">Handling Vacation Rest-Service</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/vacationRestService">vacationRestService</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/doLoginWithParameters:">doLoginWithParameters:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/doUserProfileRequest:aUser:">doUserProfileRequest:aUser:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/doVacationInformationRequest">doVacationInformationRequest</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/relationshipFromDictionary:andManagedObjectContext:andRelation:">relationshipFromDictionary:andManagedObjectContext:andRelation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restService:didFinishRestCallWithErrors:andDescription:">restService:didFinishRestCallWithErrors:andDescription:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restService:didFinishRestCallWithResponse:andDescription:">restService:didFinishRestCallWithResponse:andDescription:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveNewsMessagesFromWLLoginResponse:">saveNewsMessagesFromWLLoginResponse:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveOrUpdateUserFromUrl">saveOrUpdateUserFromUrl</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveOrUpdateUserFromWLLoginResponse:">saveOrUpdateUserFromWLLoginResponse:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="WLBaseRest Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">WLBaseRest Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/WLRestServiceProtocol.html">WLRestServiceProtocol</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">WLBaseRest.h<br />WLBaseRest.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The class is implementing the rest calls and responds for the applications base functions.</p>
+
+<p>To handle rest calls the RestKit framework is used.
+The basic functions are:</p>
+
+<pre><code>- doing login
+- getting user profile information
+</code></pre>
+
+<p>This class contents some private methods to manage <a href="../Classes/NewsMessages.html">NewsMessages</a>, <a href="../Classes/User.html">User</a> and the WLRestCallCompletedProtocol.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Delegate to Parent" name="task_Delegate to Parent"></a>
+						<h3 class="subsubtitle task-title">Delegate to Parent</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Calling Rest-Service" name="task_Calling Rest-Service"></a>
+						<h3 class="subsubtitle task-title">Calling Rest-Service</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/doLoginWithParameters:">&ndash;&nbsp;doLoginWithParameters:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveOrUpdateUserFromUrl">&ndash;&nbsp;saveOrUpdateUserFromUrl</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/doVacationInformationRequest">&ndash;&nbsp;doVacationInformationRequest</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/doUserProfileRequest:aUser:">&ndash;&nbsp;doUserProfileRequest:aUser:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling Core Data" name="task_Handling Core Data"></a>
+						<h3 class="subsubtitle task-title">Handling Core Data</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/relationshipFromDictionary:andManagedObjectContext:andRelation:">&ndash;&nbsp;relationshipFromDictionary:andManagedObjectContext:andRelation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveOrUpdateUserFromWLLoginResponse:">&ndash;&nbsp;saveOrUpdateUserFromWLLoginResponse:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveNewsMessagesFromWLLoginResponse:">&ndash;&nbsp;saveNewsMessagesFromWLLoginResponse:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Respond to Rest Service Protocol" name="task_Respond to Rest Service Protocol"></a>
+						<h3 class="subsubtitle task-title">Respond to Rest Service Protocol</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restService:didFinishRestCallWithResponse:andDescription:">&ndash;&nbsp;restService:didFinishRestCallWithResponse:andDescription:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restService:didFinishRestCallWithErrors:andDescription:">&ndash;&nbsp;restService:didFinishRestCallWithErrors:andDescription:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling Vacation Rest-Service" name="task_Handling Vacation Rest-Service"></a>
+						<h3 class="subsubtitle task-title">Handling Vacation Rest-Service</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/vacationRestService">&nbsp;&nbsp;vacationRestService</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The property to delegate rest results to the calling view controller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;WLRestServiceProtocol&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The property to delegate rest results to the calling view controller.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLBaseRest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/vacationRestService" title="vacationRestService"></a>
+	<h3 class="subsubtitle method-title">vacationRestService</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Managing the server communication concerning vacation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) WLVacationRest *vacationRestService</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Managing the server communication concerning vacation.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WLVacationRest.html">WLVacationRest</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLBaseRest.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/doLoginWithParameters:" title="doLoginWithParameters:"></a>
+	<h3 class="subsubtitle method-title">doLoginWithParameters:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Doing a rest call to manage the login communication.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)doLoginWithParameters:(NSDictionary *)<em>postParameters</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>postParameters</em></dt>
+			<dd><p>Is a NSDictionary that contents login parameters.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Doing a rest call to manage the login communication.</p>
+
+<p>On Login user profile request and user vacation information request are executed too.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLBaseRest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/doUserProfileRequest:aUser:" title="doUserProfileRequest:aUser:"></a>
+	<h3 class="subsubtitle method-title">doUserProfileRequest:aUser:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Doing the user profile Request and updating all relationships to other users.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)doUserProfileRequest:(NSManagedObjectContext *)<em>managedObjectContext</em> aUser:(User *)<em>aUser</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>managedObjectContext</em></dt>
+			<dd><p>The context the core data is saved</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aUser</em></dt>
+			<dd><p>The logged in userdata.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Doing the user profile Request and updating all relationships to other users.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLBaseRest.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/doVacationInformationRequest" title="doVacationInformationRequest"></a>
+	<h3 class="subsubtitle method-title">doVacationInformationRequest</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called to get users vacation information from server and to write it in core data.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)doVacationInformationRequest</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called to get users vacation information from server and to write it in core data.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLBaseRest.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/relationshipFromDictionary:andManagedObjectContext:andRelation:" title="relationshipFromDictionary:andManagedObjectContext:andRelation:"></a>
+	<h3 class="subsubtitle method-title">relationshipFromDictionary:andManagedObjectContext:andRelation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creating relationship to users from dictionay got from userProfileResponse.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)relationshipFromDictionary:(NSDictionary *)<em>dictionary</em> andManagedObjectContext:(NSManagedObjectContext *)<em>managedObjectContext</em> andRelation:(NSNumber *)<em>relation</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dictionary</em></dt>
+			<dd><p>The dictionary containing the data for teammates.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>managedObjectContext</em></dt>
+			<dd><p>The context the core data is saved</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>relation</em></dt>
+			<dd><p>The defined relation to the usergroup in dictionary.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creating relationship to users from dictionay got from userProfileResponse.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/Teammate.html">Teammate</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLBaseRest.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restService:didFinishRestCallWithErrors:andDescription:" title="restService:didFinishRestCallWithErrors:andDescription:"></a>
+	<h3 class="subsubtitle method-title">restService:didFinishRestCallWithErrors:andDescription:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when vacation information request finished with errors.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)restService:(id)<em>restService</em> didFinishRestCallWithErrors:(NSString *)<em>errorMessage</em> andDescription:(NSString *)<em>description</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>restService</em></dt>
+			<dd><p>The vacation rest service object caused the error.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorMessage</em></dt>
+			<dd><p>The error message from rest call.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>description</em></dt>
+			<dd><p>The rest calls description.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when vacation information request finished with errors.</p>
+
+<p>Showing error message is delegated.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLBaseRest.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restService:didFinishRestCallWithResponse:andDescription:" title="restService:didFinishRestCallWithResponse:andDescription:"></a>
+	<h3 class="subsubtitle method-title">restService:didFinishRestCallWithResponse:andDescription:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when vacation information request finished successfull.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)restService:(id)<em>restService</em> didFinishRestCallWithResponse:(id)<em>response</em> andDescription:(NSString *)<em>description</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>restService</em></dt>
+			<dd><p>The rest service object that has finished rest call.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>response</em></dt>
+			<dd><p>The response from the server.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>description</em></dt>
+			<dd><p>The rest calls description.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when vacation information request finished successfull.</p>
+
+<p>Handling on success is delegated.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLBaseRest.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveNewsMessagesFromWLLoginResponse:" title="saveNewsMessagesFromWLLoginResponse:"></a>
+	<h3 class="subsubtitle method-title">saveNewsMessagesFromWLLoginResponse:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Saves or updates the <a href="../Classes/NewsMessages.html">NewsMessages</a> in core data.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)saveNewsMessagesFromWLLoginResponse:(WLLoginResponse *)<em>loginResponse</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loginResponse</em></dt>
+			<dd><p>The response from server mapped to an object.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Saves or updates the <a href="../Classes/NewsMessages.html">NewsMessages</a> in core data.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WLLoginResponse.html">WLLoginResponse</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/NewsMessages.html">NewsMessages</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLBaseRest.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveOrUpdateUserFromUrl" title="saveOrUpdateUserFromUrl"></a>
+	<h3 class="subsubtitle method-title">saveOrUpdateUserFromUrl</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Doing a rest call to get user data from wave intranet. This is only called on URL-Start.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)saveOrUpdateUserFromUrl</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Doing a rest call to get user data from wave intranet. This is only called on URL-Start.</p>
+
+<p>Existing <a href="../Classes/User.html">User</a> entities will be updated and others are created.
+Additional the method creates all <a href="../Classes/Teammate.html">Teammate</a> objects having a relation to the logged in user.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/Teammate.html">Teammate</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLBaseRest.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveOrUpdateUserFromWLLoginResponse:" title="saveOrUpdateUserFromWLLoginResponse:"></a>
+	<h3 class="subsubtitle method-title">saveOrUpdateUserFromWLLoginResponse:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Doing a rest call to get user data from wave intranet.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)saveOrUpdateUserFromWLLoginResponse:(WLLoginResponse *)<em>loginResponse</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loginResponse</em></dt>
+			<dd><p>The response from server mapped in an object.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Doing a rest call to get user data from wave intranet.</p>
+
+<p>Existing <a href="../Classes/User.html">User</a> entities will be updated and others are created.
+Additional the method creates all <a href="../Classes/Teammate.html">Teammate</a> objects having a relation to the logged in user.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WLLoginResponse.html">WLLoginResponse</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/Teammate.html">Teammate</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLBaseRest.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 sidion. All rights reserved. (Last updated: 2013-09-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

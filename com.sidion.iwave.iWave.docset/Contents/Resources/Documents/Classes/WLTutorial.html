@@ -1,0 +1,1064 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>WLTutorial Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">iWave </a></h1>
+				<a id="developerHome" href="../index.html">sidion</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">WLTutorial Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/description">&nbsp;&nbsp;&nbsp;&nbsp;description</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/sharedTutorial">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedTutorial</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/abortTutorial">&nbsp;&nbsp;&nbsp;&nbsp;- abortTutorial</option>
+	
+	<option value="//api/name/center">&nbsp;&nbsp;&nbsp;&nbsp;- center</option>
+	
+	<option value="//api/name/didChangeDeviceOrientationTo:">&nbsp;&nbsp;&nbsp;&nbsp;- didChangeDeviceOrientationTo:</option>
+	
+	<option value="//api/name/doLastStep">&nbsp;&nbsp;&nbsp;&nbsp;- doLastStep</option>
+	
+	<option value="//api/name/doNextStep">&nbsp;&nbsp;&nbsp;&nbsp;- doNextStep</option>
+	
+	<option value="//api/name/endTutorial">&nbsp;&nbsp;&nbsp;&nbsp;- endTutorial</option>
+	
+	<option value="//api/name/sayHelloToUserWith:">&nbsp;&nbsp;&nbsp;&nbsp;- sayHelloToUserWith:</option>
+	
+	<option value="//api/name/setTheArrowPoint">&nbsp;&nbsp;&nbsp;&nbsp;- setTheArrowPoint</option>
+	
+	<option value="//api/name/startTutorialWith:">&nbsp;&nbsp;&nbsp;&nbsp;- startTutorialWith:</option>
+	
+	<option value="//api/name/stepBack">&nbsp;&nbsp;&nbsp;&nbsp;- stepBack</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Tutorial Properties">Accessing Tutorial Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configure the Shared Tutorial Instance">Configure the Shared Tutorial Instance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Greetings to the User">Greetings to the User</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Doing the Tutorial">Doing the Tutorial</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Responding to View Rotation Events">Responding to View Rotation Events</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Some Screen Stuff">Some Screen Stuff</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/description">description</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedTutorial">sharedTutorial</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/abortTutorial">abortTutorial</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/center">center</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didChangeDeviceOrientationTo:">didChangeDeviceOrientationTo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/doLastStep">doLastStep</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/doNextStep">doNextStep</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endTutorial">endTutorial</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sayHelloToUserWith:">sayHelloToUserWith:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setTheArrowPoint">setTheArrowPoint</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startTutorialWith:">startTutorialWith:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stepBack">stepBack</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="WLTutorial Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">WLTutorial Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">WLTutorial.h<br />WLTutorial.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The Tutorial class handles the tutorial for iWaves MiniApp Carribean.
+The Tutorial contains different steps and hello messages.
+The View shown by the Tutorial is independend from the current view controller.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Accessing Tutorial Properties" name="task_Accessing Tutorial Properties"></a>
+						<h3 class="subsubtitle task-title">Accessing Tutorial Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/description">&nbsp;&nbsp;description</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configure the Shared Tutorial Instance" name="task_Configure the Shared Tutorial Instance"></a>
+						<h3 class="subsubtitle task-title">Configure the Shared Tutorial Instance</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedTutorial">+&nbsp;sharedTutorial</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Greetings to the User" name="task_Greetings to the User"></a>
+						<h3 class="subsubtitle task-title">Greetings to the User</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sayHelloToUserWith:">&ndash;&nbsp;sayHelloToUserWith:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Doing the Tutorial" name="task_Doing the Tutorial"></a>
+						<h3 class="subsubtitle task-title">Doing the Tutorial</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/doNextStep">&ndash;&nbsp;doNextStep</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/doLastStep">&ndash;&nbsp;doLastStep</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stepBack">&ndash;&nbsp;stepBack</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endTutorial">&ndash;&nbsp;endTutorial</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/abortTutorial">&ndash;&nbsp;abortTutorial</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startTutorialWith:">&ndash;&nbsp;startTutorialWith:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Responding to View Rotation Events" name="task_Responding to View Rotation Events"></a>
+						<h3 class="subsubtitle task-title">Responding to View Rotation Events</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didChangeDeviceOrientationTo:">&ndash;&nbsp;didChangeDeviceOrientationTo:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setTheArrowPoint">&ndash;&nbsp;setTheArrowPoint</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Some Screen Stuff" name="task_Some Screen Stuff"></a>
+						<h3 class="subsubtitle task-title">Some Screen Stuff</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/center">&ndash;&nbsp;center</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/description" title="description"></a>
+	<h3 class="subsubtitle method-title">description</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A getter property to get the information about specific steps in the tutorial.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, getter=getDescription) NSString *description</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A getter property to get the information about specific steps in the tutorial.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLTutorial.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedTutorial" title="sharedTutorial"></a>
+	<h3 class="subsubtitle method-title">sharedTutorial</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return the shared instance of tho tutorial object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (WLTutorial *)sharedTutorial</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The shared tutorial instance</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Return the shared instance of tho tutorial object</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLTutorial.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/abortTutorial" title="abortTutorial"></a>
+	<h3 class="subsubtitle method-title">abortTutorial</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Doing the abort step in the tutorial. After showing the abort text <a href="#//api/name/endTutorial">endTutorial</a> is called.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)abortTutorial</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Doing the abort step in the tutorial. After showing the abort text <a href="#//api/name/endTutorial">endTutorial</a> is called.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/doNextStep">- doNextStep</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/doLastStep">- doLastStep</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/stepBack">- stepBack</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/endTutorial">- endTutorial</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLTutorial.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/center" title="center"></a>
+	<h3 class="subsubtitle method-title">center</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the screen center for the tutorial orientation property.
+Therefor the coordinate system is fixed in the upper left corner of the device.
+X-axis is always to the right and y-axis is always to the bottom.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGPoint)center</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The center point in the screen.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the screen center for the tutorial orientation property.
+Therefor the coordinate system is fixed in the upper left corner of the device.
+X-axis is always to the right and y-axis is always to the bottom.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLTutorial.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didChangeDeviceOrientationTo:" title="didChangeDeviceOrientationTo:"></a>
+	<h3 class="subsubtitle method-title">didChangeDeviceOrientationTo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Change position of arrow and text on orientation changes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didChangeDeviceOrientationTo:(UIInterfaceOrientation)<em>orientation</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>orientation</em></dt>
+			<dd><p>The orientation the tutorial elements should be shown.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Change position of arrow and text on orientation changes.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLTutorial.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/doLastStep" title="doLastStep"></a>
+	<h3 class="subsubtitle method-title">doLastStep</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Doing the last tutorial step. Specific display of tutorial arrow and text is done.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)doLastStep</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Doing the last tutorial step. Specific display of tutorial arrow and text is done.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WLTutorialArrow.html">WLTutorialArrow</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/doNextStep">- doNextStep</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/stepBack">- stepBack</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/abortTutorial">- abortTutorial</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLTutorial.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/doNextStep" title="doNextStep"></a>
+	<h3 class="subsubtitle method-title">doNextStep</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Doing the next tutorial step. Specific display of tutorial arrow and text is done.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)doNextStep</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Doing the next tutorial step. Specific display of tutorial arrow and text is done.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WLTutorialArrow.html">WLTutorialArrow</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/doLastStep">- doLastStep</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/stepBack">- stepBack</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/abortTutorial">- abortTutorial</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLTutorial.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endTutorial" title="endTutorial"></a>
+	<h3 class="subsubtitle method-title">endTutorial</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Doing all the things to end the tutorial. Remove arrow and text, update core date.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)endTutorial</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Doing all the things to end the tutorial. Remove arrow and text, update core date.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WLTutorialArrow.html">WLTutorialArrow</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/FirstLaunch.html">FirstLaunch</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLTutorial.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sayHelloToUserWith:" title="sayHelloToUserWith:"></a>
+	<h3 class="subsubtitle method-title">sayHelloToUserWith:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Display the greetings to the user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sayHelloToUserWith:(UIInterfaceOrientation)<em>orientation</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>orientation</em></dt>
+			<dd><p>The device orientation to set the display to the rigth position.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Display the greetings to the user.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLTutorial.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setTheArrowPoint" title="setTheArrowPoint"></a>
+	<h3 class="subsubtitle method-title">setTheArrowPoint</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Setting the arrow startpoint in dependency to the device orientation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setTheArrowPoint</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Setting the arrow startpoint in dependency to the device orientation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLTutorial.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startTutorialWith:" title="startTutorialWith:"></a>
+	<h3 class="subsubtitle method-title">startTutorialWith:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Starts the tutorial when greetings ended by user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)startTutorialWith:(UIInterfaceOrientation)<em>orientation</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>orientation</em></dt>
+			<dd><p>The orientation the tutorial elements should be shown.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Starts the tutorial when greetings ended by user.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLTutorial.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stepBack" title="stepBack"></a>
+	<h3 class="subsubtitle method-title">stepBack</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Doing one step back in the tutorial. Specific display of tutorial arrow and text is done.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stepBack</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Doing one step back in the tutorial. Specific display of tutorial arrow and text is done.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WLTutorialArrow.html">WLTutorialArrow</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/doNextStep">- doNextStep</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/doLastStep">- doLastStep</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/abortTutorial">- abortTutorial</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLTutorial.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 sidion. All rights reserved. (Last updated: 2013-09-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

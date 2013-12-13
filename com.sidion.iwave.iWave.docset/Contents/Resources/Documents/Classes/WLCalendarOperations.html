@@ -1,0 +1,1970 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>WLCalendarOperations Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">iWave </a></h1>
+				<a id="developerHome" href="../index.html">sidion</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">WLCalendarOperations Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/areSameDayDate:andDate:">&nbsp;&nbsp;&nbsp;&nbsp;+ areSameDayDate:andDate:</option>
+	
+	<option value="//api/name/dateIsPublicHoliday:forLocale:">&nbsp;&nbsp;&nbsp;&nbsp;+ dateIsPublicHoliday:forLocale:</option>
+	
+	<option value="//api/name/dateIsWeekAfterVacation:">&nbsp;&nbsp;&nbsp;&nbsp;+ dateIsWeekAfterVacation:</option>
+	
+	<option value="//api/name/dateIsWeekBeforeVacation:">&nbsp;&nbsp;&nbsp;&nbsp;+ dateIsWeekBeforeVacation:</option>
+	
+	<option value="//api/name/dateIsWeenkend:">&nbsp;&nbsp;&nbsp;&nbsp;+ dateIsWeenkend:</option>
+	
+	<option value="//api/name/dayWithYear:andMonth:andDay:">&nbsp;&nbsp;&nbsp;&nbsp;+ dayWithYear:andMonth:andDay:</option>
+	
+	<option value="//api/name/daysFromDate:toDate:includingDates:">&nbsp;&nbsp;&nbsp;&nbsp;+ daysFromDate:toDate:includingDates:</option>
+	
+	<option value="//api/name/daysSinceLastLogin:">&nbsp;&nbsp;&nbsp;&nbsp;+ daysSinceLastLogin:</option>
+	
+	<option value="//api/name/getDateInformation:withFormat:">&nbsp;&nbsp;&nbsp;&nbsp;+ getDateInformation:withFormat:</option>
+	
+	<option value="//api/name/getEasterSunday:">&nbsp;&nbsp;&nbsp;&nbsp;+ getEasterSunday:</option>
+	
+	<option value="//api/name/getEasterSundayMarchDayForYear:">&nbsp;&nbsp;&nbsp;&nbsp;+ getEasterSundayMarchDayForYear:</option>
+	
+	<option value="//api/name/getLastVacationEnd">&nbsp;&nbsp;&nbsp;&nbsp;+ getLastVacationEnd</option>
+	
+	<option value="//api/name/getMonthFromDate:">&nbsp;&nbsp;&nbsp;&nbsp;+ getMonthFromDate:</option>
+	
+	<option value="//api/name/getNextVacationStart">&nbsp;&nbsp;&nbsp;&nbsp;+ getNextVacationStart</option>
+	
+	<option value="//api/name/getPublicHolidayForLocale:andYear:">&nbsp;&nbsp;&nbsp;&nbsp;+ getPublicHolidayForLocale:andYear:</option>
+	
+	<option value="//api/name/getShortWeekdayFromDate:">&nbsp;&nbsp;&nbsp;&nbsp;+ getShortWeekdayFromDate:</option>
+	
+	<option value="//api/name/getWeekdayNumberFromDate:">&nbsp;&nbsp;&nbsp;&nbsp;+ getWeekdayNumberFromDate:</option>
+	
+	<option value="//api/name/getYearFromDate:">&nbsp;&nbsp;&nbsp;&nbsp;+ getYearFromDate:</option>
+	
+	<option value="//api/name/isFirstVacationDay:">&nbsp;&nbsp;&nbsp;&nbsp;+ isFirstVacationDay:</option>
+	
+	<option value="//api/name/isLastVacationDay:">&nbsp;&nbsp;&nbsp;&nbsp;+ isLastVacationDay:</option>
+	
+	<option value="//api/name/isSingleVacationDay:">&nbsp;&nbsp;&nbsp;&nbsp;+ isSingleVacationDay:</option>
+	
+	<option value="//api/name/isVacationDay:">&nbsp;&nbsp;&nbsp;&nbsp;+ isVacationDay:</option>
+	
+	<option value="//api/name/isVacationDay:exeptIDs:">&nbsp;&nbsp;&nbsp;&nbsp;+ isVacationDay:exeptIDs:</option>
+	
+	<option value="//api/name/isValidVacation:">&nbsp;&nbsp;&nbsp;&nbsp;+ isValidVacation:</option>
+	
+	<option value="//api/name/vacationIsDisplayableInCalendar:">&nbsp;&nbsp;&nbsp;&nbsp;+ vacationIsDisplayableInCalendar:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Vacation on Date">Vacation on Date</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Compare Dates">Compare Dates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Get formatted Date Information">Get formatted Date Information</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Get Weekend and Holiday Information">Get Weekend and Holiday Information</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/areSameDayDate:andDate:">areSameDayDate:andDate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateIsPublicHoliday:forLocale:">dateIsPublicHoliday:forLocale:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateIsWeekAfterVacation:">dateIsWeekAfterVacation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateIsWeekBeforeVacation:">dateIsWeekBeforeVacation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateIsWeenkend:">dateIsWeenkend:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dayWithYear:andMonth:andDay:">dayWithYear:andMonth:andDay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/daysFromDate:toDate:includingDates:">daysFromDate:toDate:includingDates:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/daysSinceLastLogin:">daysSinceLastLogin:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getDateInformation:withFormat:">getDateInformation:withFormat:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getEasterSunday:">getEasterSunday:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getEasterSundayMarchDayForYear:">getEasterSundayMarchDayForYear:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getLastVacationEnd">getLastVacationEnd</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getMonthFromDate:">getMonthFromDate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getNextVacationStart">getNextVacationStart</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getPublicHolidayForLocale:andYear:">getPublicHolidayForLocale:andYear:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getShortWeekdayFromDate:">getShortWeekdayFromDate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getWeekdayNumberFromDate:">getWeekdayNumberFromDate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getYearFromDate:">getYearFromDate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isFirstVacationDay:">isFirstVacationDay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isLastVacationDay:">isLastVacationDay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isSingleVacationDay:">isSingleVacationDay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isVacationDay:">isVacationDay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isVacationDay:exeptIDs:">isVacationDay:exeptIDs:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isValidVacation:">isValidVacation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/vacationIsDisplayableInCalendar:">vacationIsDisplayableInCalendar:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="WLCalendarOperations Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">WLCalendarOperations Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">WLCalendarOperations.h<br />WLCalendarOperations.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class contains a lot of class methods that handle dates.
+The first task is to test a date if it is vacation date or what kind of vacation date it is.
+The second task is the comparison of dates like if dates are the same day or getting day difference of dates.
+The third task handles formatting the date to string.
+The fourth task is testing a date on public holiday or weekend.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Vacation on Date" name="task_Vacation on Date"></a>
+						<h3 class="subsubtitle task-title">Vacation on Date</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isVacationDay:">+&nbsp;isVacationDay:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isVacationDay:exeptIDs:">+&nbsp;isVacationDay:exeptIDs:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isFirstVacationDay:">+&nbsp;isFirstVacationDay:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isLastVacationDay:">+&nbsp;isLastVacationDay:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isSingleVacationDay:">+&nbsp;isSingleVacationDay:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateIsWeekAfterVacation:">+&nbsp;dateIsWeekAfterVacation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateIsWeekBeforeVacation:">+&nbsp;dateIsWeekBeforeVacation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isValidVacation:">+&nbsp;isValidVacation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/vacationIsDisplayableInCalendar:">+&nbsp;vacationIsDisplayableInCalendar:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getLastVacationEnd">+&nbsp;getLastVacationEnd</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getNextVacationStart">+&nbsp;getNextVacationStart</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Compare Dates" name="task_Compare Dates"></a>
+						<h3 class="subsubtitle task-title">Compare Dates</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/areSameDayDate:andDate:">+&nbsp;areSameDayDate:andDate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/daysSinceLastLogin:">+&nbsp;daysSinceLastLogin:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/daysFromDate:toDate:includingDates:">+&nbsp;daysFromDate:toDate:includingDates:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Get formatted Date Information" name="task_Get formatted Date Information"></a>
+						<h3 class="subsubtitle task-title">Get formatted Date Information</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getMonthFromDate:">+&nbsp;getMonthFromDate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getYearFromDate:">+&nbsp;getYearFromDate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getShortWeekdayFromDate:">+&nbsp;getShortWeekdayFromDate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getWeekdayNumberFromDate:">+&nbsp;getWeekdayNumberFromDate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getDateInformation:withFormat:">+&nbsp;getDateInformation:withFormat:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Get Weekend and Holiday Information" name="task_Get Weekend and Holiday Information"></a>
+						<h3 class="subsubtitle task-title">Get Weekend and Holiday Information</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateIsWeenkend:">+&nbsp;dateIsWeenkend:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateIsPublicHoliday:forLocale:">+&nbsp;dateIsPublicHoliday:forLocale:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getPublicHolidayForLocale:andYear:">+&nbsp;getPublicHolidayForLocale:andYear:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getEasterSunday:">+&nbsp;getEasterSunday:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getEasterSundayMarchDayForYear:">+&nbsp;getEasterSundayMarchDayForYear:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dayWithYear:andMonth:andDay:">+&nbsp;dayWithYear:andMonth:andDay:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/areSameDayDate:andDate:" title="areSameDayDate:andDate:"></a>
+	<h3 class="subsubtitle method-title">areSameDayDate:andDate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Compares two dates and figures out if they are on the same day.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)areSameDayDate:(NSDate *)<em>firstDate</em> andDate:(NSDate *)<em>secondDate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>firstDate</em></dt>
+			<dd><p>The first date to compare.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>secondDate</em></dt>
+			<dd><p>The second date to compare.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Yes if the dates are on the equal day.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Compares two dates and figures out if they are on the same day.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateIsPublicHoliday:forLocale:" title="dateIsPublicHoliday:forLocale:"></a>
+	<h3 class="subsubtitle method-title">dateIsPublicHoliday:forLocale:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Checks if a date is public holiday.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)dateIsPublicHoliday:(NSDate *)<em>date</em> forLocale:(NSLocale *)<em>locale</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>date</em></dt>
+			<dd><p>The date to check for weekend.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>locale</em></dt>
+			<dd><p>The locale to check for public holidays.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES, if the date is public holiday..</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Checks if a date is public holiday.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateIsWeekAfterVacation:" title="dateIsWeekAfterVacation:"></a>
+	<h3 class="subsubtitle method-title">dateIsWeekAfterVacation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This mehtod checks if the last vacation day of the user was wihtin the week before the date parameter.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)dateIsWeekAfterVacation:(NSDate *)<em>date</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>date</em></dt>
+			<dd><p>The date to look for last vacation.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Yes, if the last vacation day is within one week before the date parameter.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This mehtod checks if the last vacation day of the user was wihtin the week before the date parameter.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateIsWeekBeforeVacation:" title="dateIsWeekBeforeVacation:"></a>
+	<h3 class="subsubtitle method-title">dateIsWeekBeforeVacation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This mehtod checks if the next vacation day of the user is wihtin the week after the date parameter.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)dateIsWeekBeforeVacation:(NSDate *)<em>date</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>date</em></dt>
+			<dd><p>The date to look for next vacation.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Yes, if the nextt vacation day is within one week after the date parameter.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This mehtod checks if the next vacation day of the user is wihtin the week after the date parameter.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateIsWeenkend:" title="dateIsWeenkend:"></a>
+	<h3 class="subsubtitle method-title">dateIsWeenkend:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Checks if a date is a Sunday or Saturday</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)dateIsWeenkend:(NSDate *)<em>date</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>date</em></dt>
+			<dd><p>The date to check for weekend.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES, if the date is Sunday or Saturday.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Checks if a date is a Sunday or Saturday</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dayWithYear:andMonth:andDay:" title="dayWithYear:andMonth:andDay:"></a>
+	<h3 class="subsubtitle method-title">dayWithYear:andMonth:andDay:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a date by parameters day, month and year.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSDate *)dayWithYear:(int)<em>year</em> andMonth:(int)<em>month</em> andDay:(int)<em>day</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>year</em></dt>
+			<dd><p>The year the date is set.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>month</em></dt>
+			<dd><p>The month the date is set. Months larger than 12 switch to next year.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>day</em></dt>
+			<dd><p>The day in selected month. Values larger than last day of month change to next month.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A date from the three parameters.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a date by parameters day, month and year.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/daysFromDate:toDate:includingDates:" title="daysFromDate:toDate:includingDates:"></a>
+	<h3 class="subsubtitle method-title">daysFromDate:toDate:includingDates:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Compares the two date parameters and counts dates between both.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (int)daysFromDate:(NSDate *)<em>firstDate</em> toDate:(NSDate *)<em>secondDate</em> includingDates:(BOOL)<em>includeDates</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>firstDate</em></dt>
+			<dd><p>The first date to compare.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>secondDate</em></dt>
+			<dd><p>The second date to compare.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>includeDates</em></dt>
+			<dd><p>YES if first and second date should be counted, NO if only dates between should be counted.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The day difference from first and second date. 1 if first and second date are the same.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Compares the two date parameters and counts dates between both.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/daysSinceLastLogin:" title="daysSinceLastLogin:"></a>
+	<h3 class="subsubtitle method-title">daysSinceLastLogin:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Compares the date parameter with the date of the last login.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (int)daysSinceLastLogin:(NSDate *)<em>date</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>date</em></dt>
+			<dd><p>The date to compare with last login date.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The day difference from date and last login. 0 if date is before last login date.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Compares the date parameter with the date of the last login.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getDateInformation:withFormat:" title="getDateInformation:withFormat:"></a>
+	<h3 class="subsubtitle method-title">getDateInformation:withFormat:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The method gets the information of a date by giving a date format.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)getDateInformation:(NSDate *)<em>date</em> withFormat:(NSString *)<em>format</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>date</em></dt>
+			<dd><p>The date to get the information from.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>format</em></dt>
+			<dd><p>The format the output should be.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The description of the date by the given format.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The method gets the information of a date by giving a date format.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getEasterSunday:" title="getEasterSunday:"></a>
+	<h3 class="subsubtitle method-title">getEasterSunday:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the easter sunday date for the given year.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSDate *)getEasterSunday:(int)<em>year</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>year</em></dt>
+			<dd><p>The year the easter day should be found.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The date of easter sunday in year.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the easter sunday date for the given year.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getEasterSundayMarchDayForYear:" title="getEasterSundayMarchDayForYear:"></a>
+	<h3 class="subsubtitle method-title">getEasterSundayMarchDayForYear:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Doing the Gauß-easter-formular to get the march day of easter sunday for the given year.
+Day 32 is first of april.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (int)getEasterSundayMarchDayForYear:(int)<em>year</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>year</em></dt>
+			<dd><p>The year the easter day should be found.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The day of easter sunday in year after 1st march.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Doing the Gauß-easter-formular to get the march day of easter sunday for the given year.
+Day 32 is first of april.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getLastVacationEnd" title="getLastVacationEnd"></a>
+	<h3 class="subsubtitle method-title">getLastVacationEnd</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This methods searches for the last vacation day user had.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSTimeInterval)getLastVacationEnd</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The time intervall of the last vacation day since 1970.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This methods searches for the last vacation day user had.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getMonthFromDate:" title="getMonthFromDate:"></a>
+	<h3 class="subsubtitle method-title">getMonthFromDate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Method to get the full months name from a date.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)getMonthFromDate:(NSDate *)<em>date</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>date</em></dt>
+			<dd><p>The date to get the month from.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The full months name of the date.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Method to get the full months name from a date.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getNextVacationStart" title="getNextVacationStart"></a>
+	<h3 class="subsubtitle method-title">getNextVacationStart</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This methods searches for the next vacation day user has.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSTimeInterval)getNextVacationStart</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The time intervall of the next vacation day since 1970.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This methods searches for the next vacation day user has.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getPublicHolidayForLocale:andYear:" title="getPublicHolidayForLocale:andYear:"></a>
+	<h3 class="subsubtitle method-title">getPublicHolidayForLocale:andYear:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns all public holidays for year and locale in an array.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)getPublicHolidayForLocale:(NSLocale *)<em>locale</em> andYear:(int)<em>year</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>locale</em></dt>
+			<dd><p>The locale the public holidays existing.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>year</em></dt>
+			<dd><p>The year searched for holiday.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An array contaioning all public holiday dates for locale and year.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns all public holidays for year and locale in an array.</p><div class="warning"><p><strong>Warning:</strong> Only german/ baden wuertemberg public holidays are returned yet.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getShortWeekdayFromDate:" title="getShortWeekdayFromDate:"></a>
+	<h3 class="subsubtitle method-title">getShortWeekdayFromDate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Method to get the short description of weekday from a date.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)getShortWeekdayFromDate:(NSDate *)<em>date</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>date</em></dt>
+			<dd><p>The date to get the weekday from.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The short weekdays description of the date.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Method to get the short description of weekday from a date.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getWeekdayNumberFromDate:" title="getWeekdayNumberFromDate:"></a>
+	<h3 class="subsubtitle method-title">getWeekdayNumberFromDate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Method to get the days number in month from a date.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)getWeekdayNumberFromDate:(NSDate *)<em>date</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>date</em></dt>
+			<dd><p>The date to get the number from.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The short weekdays number of the date.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Method to get the days number in month from a date.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getYearFromDate:" title="getYearFromDate:"></a>
+	<h3 class="subsubtitle method-title">getYearFromDate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Method to get the full years description from a date.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)getYearFromDate:(NSDate *)<em>date</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>date</em></dt>
+			<dd><p>The date to get the year from.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The full years description of the date.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Method to get the full years description from a date.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isFirstVacationDay:" title="isFirstVacationDay:"></a>
+	<h3 class="subsubtitle method-title">isFirstVacationDay:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Testing if the given date is the users first vacation day.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isFirstVacationDay:(NSDate *)<em>date</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>date</em></dt>
+			<dd><p>The date to test for first vacation day.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Yes if the date is the first vacation day.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Testing if the given date is the users first vacation day.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isLastVacationDay:" title="isLastVacationDay:"></a>
+	<h3 class="subsubtitle method-title">isLastVacationDay:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Testing if the given date is the users last vacation day.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isLastVacationDay:(NSDate *)<em>date</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>date</em></dt>
+			<dd><p>The date to test for last vacation day.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Yes if the date is the last vacation day.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Testing if the given date is the users last vacation day.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isSingleVacationDay:" title="isSingleVacationDay:"></a>
+	<h3 class="subsubtitle method-title">isSingleVacationDay:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Testing if the given date a single vacation day.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isSingleVacationDay:(NSDate *)<em>date</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>date</em></dt>
+			<dd><p>The date to test for single vacation day.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Yes if the date is a single vacation day.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Testing if the given date a single vacation day.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isVacationDay:" title="isVacationDay:"></a>
+	<h3 class="subsubtitle method-title">isVacationDay:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Testing if the given date is during users vacation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isVacationDay:(NSDate *)<em>date</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>date</em></dt>
+			<dd><p>The date to test for vacation.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Yes if the date is a vacation day.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Testing if the given date is during users vacation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isVacationDay:exeptIDs:" title="isVacationDay:exeptIDs:"></a>
+	<h3 class="subsubtitle method-title">isVacationDay:exeptIDs:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Testing if the given date is during users vacation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isVacationDay:(NSDate *)<em>date</em> exeptIDs:(NSArray *)<em>idArray</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>date</em></dt>
+			<dd><p>The date to test for vacation.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>idArray</em></dt>
+			<dd><p>An array of vacation ids not to compare wiht the date.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Yes if the date is a vacation day.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Testing if the given date is during users vacation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isValidVacation:" title="isValidVacation:"></a>
+	<h3 class="subsubtitle method-title">isValidVacation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Testing if the given vacation demand is valide.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isValidVacation:(VacationDemand *)<em>demandToCheck</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>demandToCheck</em></dt>
+			<dd><p>The vacation demand to validate.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Yes if the demandToCheck is valide.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Testing if the given vacation demand is valide.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/vacationIsDisplayableInCalendar:" title="vacationIsDisplayableInCalendar:"></a>
+	<h3 class="subsubtitle method-title">vacationIsDisplayableInCalendar:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Test if the vacation demand should be shown in the iWave calendar depending on the status.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)vacationIsDisplayableInCalendar:(VacationDemand *)<em>demand</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>demand</em></dt>
+			<dd><p>The vacation demand to test.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES, if the vacation demand should be shown in calendar.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Test if the vacation demand should be shown in the iWave calendar depending on the status.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLCalendarOperations.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 sidion. All rights reserved. (Last updated: 2013-09-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,106 @@
+/* 
+  Localizable.strings
+  iWave2
+
+  Created by Marco Lorenz on 26.04.13.
+  Copyright (c) 2013 Marco Lorenz. All rights reserved.
+*/
+
+/* Login Errors */
+
+"NoUsernameOrPassword" = "Bitte Benutzername und Passwort eingeben.";
+
+//Navigation
+"Mainmenu" = "Wavemenü";
+"Settings" = "Profil & Einstellungen";
+"Vacation" = "Karibik";
+"Marketplace" = "Marktplatz";
+"News" = "Nachrichten";
+"About" = "Info";
+"Logout" = "Abmelden";
+
+//Settings
+"LoginSettings" = "Anmeldung";
+"ProfileSettings" = "Profil";
+"UsabilitySettings" = "Bedienung";
+"ContactSettings" = "Kontakt";
+"ShowSettings" = "Kategorien anzeigen";
+"lastLogin" = "Letzte Anmeldung";
+"lastLoginText" = "Dein letztes Anmeldedatum";
+"Manager" = "Vorgesetzter";
+"Teammates" = "Teamkollegen";
+"DirectReports" = "Teammitglieder";
+
+"Buttons" = "Klassisch";
+"Gestures" = "Gesten";
+"ButtonsAndGestures" = "Klassisch und Gesten";
+"SidionLight" = "Sidion-Hell";
+"SidionDark" = "Sidion-Dunkel";
+"SidionBlue" = "Sidion-Blau";
+"SidionSand" = "Sidion-Sand";
+
+//VacationDemandType
+"HOLIDAY" = "Urlaub";
+"PARENTLEAVE" = "Elternzeit";
+"SEMINR" = "Seminar";
+"FLEXTIME" = "Gleitzeit";
+"SABBATICAL" = "Auszeit";
+
+//VacationDemandStatus
+"PENDING"="In Bearbeitung";
+"REJECTED" = "Abgelehnt";
+"APPROVED" = "Genehmigt";
+"NOTSEND" = "Nicht Beantragt";
+"TEAMVACATION" = "Ausstehende Teamanträge";
+"OTHERREPORTSVACATION" = "Weitere ausstehende Anträge";
+
+//VacationDemand
+"VacationDemand" = "Urlaubsantrag ";
+"VacationDemandAdditional" = "von ";
+"Demand" = "Anträge";
+"Calendar" = "Kalender";
+"UsersVacationDemand" = "Das ist dein Urlaubsantrag";
+"SendDemand" = "Beantragen";
+"ApproveDemand" = "Genehmigen";
+"CalendarToday" = "Heute";
+"VacationOverview" = "Urlaubsanträge";
+"DaysString" = "Tage";
+"InvalideVacationDemand" = "Dein Urlaubsantrg ist ungültig. \nVermutlich gibt es Überschneidungen mit einem bestehenden Antrag oder er beginnt/ endet an einem Wochenende.";
+"IncompleteVacationDemand" = "Fehlerhafte Angaben beim Erstellen des Antrags.";
+
+
+//Accessibility
+"AccessibiltyDateFormat" = "EEEE, d. MMMM";
+"Accessibilty_selected" = "ausgewählt";
+"is_vacation" = "Urlaubstag";
+"NextYearString" = "Nächstes Jahr";
+"NextMonthString" = "Nächster Monat";
+"PreviousMonthString" = "Vorheriger Monat";
+"PreviousYearString" = "Vorheriges Jahr";
+
+//Error
+"Error" = "Fehler";
+"VacationOverlappingErrorHeader" = "Überschneidung";
+"VacationOverlappingError" = "Der ausgewählte Tag ist bereits ein Urlaubstag!";
+"NoManagerErrorHeader" = "Kein Vorgesetzter";
+"NoManagerErrorMessage" = "Du kannst keinen Urlaub beantragen. Wer sollte den denn genehmigen?";
+"noManagerError" = "In Deinen Benutzerinformationen ist kein Vorgesetzter hinterlegt. Vor Dir gestellte Urlaubsanträge können nicht bearbeitet werden.";
+"InvalidTokenError" = "Ungültiges Token. Verbindung getrennt.";
+
+//Tutorial/Additional
+"HelloUser" = "Hallo {0}";
+"GettingStarted" = "Herzlich willkommen bei iWave! \nUm Karibik hier nutzen zu können werden wir jetzt einen Test-Urlaubsantrag erstellen.\n-Tippe irgendwo auf den Bildschirm-";
+"FirstStep" = "Um zum iWave Kalender zu gelangen tippe hier.";
+"SecondStep" = "Tippe nun auf den ersten Urlaubstag im Kalender...";
+"ThirdStep" = "...und jetzt auf den Letzten.";
+"FourthStep" = "Jetzt nur noch die Urlaubsart und einen Kommentar eintragen...";
+"LastStep" = "...und beantragen!";
+"TutorialFinished" = "Fertig! So einfach geht das mit iWave.\n\nP.S. Diese kleine Einfühurng kannst du im Infomenü wiederholen.";
+"OneWeekWithoutiWave" = "... auch mal wieder da?";
+"OneMonthWithoutiWave" = "Jetzt wird's aber Zeit für einen Urlaubsantrag.";
+"HalfYearWithoutiWave" = "Bitte gib dein iPad ab. \nDu benutzt es ja sowieso nicht.";
+"TutorialAbort" = "Ok, du brauchst offenbar keine Hilfe.\nFalls du doch noch Fragen hast, kannst du die Einführung im Infomenü wiederholen.";
+"AbortHeader" = "Abbruch";
+"GreatVacationQuestion" = "willkommen zurück, \nIch hoffe Dein Urlaub war schön.";
+"GreatVacationWishes" = "Einen schönen Urlaub wünsche ich Dir, falls wir uns vorher nicht mehr sehen.";
+"VacationInVacation" = "Was machst Du hier, \nDu hast Urlaub!";

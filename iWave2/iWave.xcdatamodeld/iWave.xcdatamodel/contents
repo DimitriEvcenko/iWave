@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="11G63b" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CommonSettings" representedClassName="CommonSettings" syncable="YES">
+        <attribute name="design" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="usability" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="FirstLaunch" representedClassName="FirstLaunch" syncable="YES">
+        <attribute name="isFirstLaunch" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="LoginSettings" representedClassName="LoginSettings" syncable="YES">
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rememberMe" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="NewsMessages" representedClassName="NewsMessages" syncable="YES">
+        <attribute name="alreadyRead" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="msgText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="receivedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Teammate" representedClassName="Teammate" syncable="YES">
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relationToUser" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="waveUserId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="department" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastLogin" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loginName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loginPassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shortName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telephoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="VacationDemand" representedClassName="VacationDemand" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdOn" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userDisplayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="demandStatus" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="VacationDemandStatus" inverseName="vacationDemand" inverseEntity="VacationDemandStatus" syncable="YES"/>
+        <relationship name="demandType" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="VacationDemandType" inverseName="vacationDemand" inverseEntity="VacationDemandType" syncable="YES"/>
+        <relationship name="vacationDemandList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VacationDemandList" inverseName="vacationDemand" inverseEntity="VacationDemandList" syncable="YES"/>
+    </entity>
+    <entity name="VacationDemandList" representedClassName="VacationDemandList" syncable="YES">
+        <relationship name="vacationDemand" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VacationDemand" inverseName="vacationDemandList" inverseEntity="VacationDemand" syncable="YES"/>
+    </entity>
+    <entity name="VacationDemandLocal" representedClassName="VacationDemandLocal" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdOn" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userDisplayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="demandStatus" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="VacationDemandStatus" inverseName="localVacationDemand" inverseEntity="VacationDemandStatus" syncable="YES"/>
+        <relationship name="demandType" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="VacationDemandType" inverseName="localVacationDemand" inverseEntity="VacationDemandType" syncable="YES"/>
+    </entity>
+    <entity name="VacationDemandStatus" representedClassName="VacationDemandStatus" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="localVacationDemand" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VacationDemandLocal" inverseName="demandStatus" inverseEntity="VacationDemandLocal" syncable="YES"/>
+        <relationship name="vacationDemand" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VacationDemand" inverseName="demandStatus" inverseEntity="VacationDemand" syncable="YES"/>
+    </entity>
+    <entity name="VacationDemandType" representedClassName="VacationDemandType" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="localVacationDemand" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VacationDemandLocal" inverseName="demandType" inverseEntity="VacationDemandLocal" syncable="YES"/>
+        <relationship name="vacationDemand" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VacationDemand" inverseName="demandType" inverseEntity="VacationDemand" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CommonSettings" positionX="-261" positionY="504" width="128" height="75"/>
+        <element name="FirstLaunch" positionX="63" positionY="525" width="128" height="60"/>
+        <element name="LoginSettings" positionX="-261" positionY="27" width="128" height="90"/>
+        <element name="NewsMessages" positionX="-261" positionY="144" width="128" height="105"/>
+        <element name="Teammate" positionX="-99" positionY="504" width="128" height="90"/>
+        <element name="User" positionX="-261" positionY="279" width="128" height="195"/>
+        <element name="VacationDemand" positionX="250" positionY="135" width="128" height="195"/>
+        <element name="VacationDemandList" positionX="367" positionY="18" width="128" height="60"/>
+        <element name="VacationDemandLocal" positionX="-92" positionY="135" width="128" height="180"/>
+        <element name="VacationDemandStatus" positionX="72" positionY="147" width="128" height="90"/>
+        <element name="VacationDemandType" positionX="97" positionY="351" width="128" height="90"/>
+    </elements>
+</model>

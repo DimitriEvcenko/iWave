@@ -1,0 +1,2277 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>WLLoginViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">iWave </a></h1>
+				<a id="developerHome" href="../index.html">sidion</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">WLLoginViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/authenticationSuccessfull">&nbsp;&nbsp;&nbsp;&nbsp;authenticationSuccessfull</option>
+	
+	<option value="//api/name/errorMsgLabel">&nbsp;&nbsp;&nbsp;&nbsp;errorMsgLabel</option>
+	
+	<option value="//api/name/loginButton">&nbsp;&nbsp;&nbsp;&nbsp;loginButton</option>
+	
+	<option value="//api/name/loginIsUp">&nbsp;&nbsp;&nbsp;&nbsp;loginIsUp</option>
+	
+	<option value="//api/name/loginSettings">&nbsp;&nbsp;&nbsp;&nbsp;loginSettings</option>
+	
+	<option value="//api/name/loginView">&nbsp;&nbsp;&nbsp;&nbsp;loginView</option>
+	
+	<option value="//api/name/managedObjectContext">&nbsp;&nbsp;&nbsp;&nbsp;managedObjectContext</option>
+	
+	<option value="//api/name/passwordInput">&nbsp;&nbsp;&nbsp;&nbsp;passwordInput</option>
+	
+	<option value="//api/name/rememberMeLabel">&nbsp;&nbsp;&nbsp;&nbsp;rememberMeLabel</option>
+	
+	<option value="//api/name/rememberMeSwitch">&nbsp;&nbsp;&nbsp;&nbsp;rememberMeSwitch</option>
+	
+	<option value="//api/name/restService">&nbsp;&nbsp;&nbsp;&nbsp;restService</option>
+	
+	<option value="//api/name/roundRectangleView">&nbsp;&nbsp;&nbsp;&nbsp;roundRectangleView</option>
+	
+	<option value="//api/name/userIdInput">&nbsp;&nbsp;&nbsp;&nbsp;userIdInput</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/adaptStyle">&nbsp;&nbsp;&nbsp;&nbsp;- adaptStyle</option>
+	
+	<option value="//api/name/changeAutoLogin:">&nbsp;&nbsp;&nbsp;&nbsp;- changeAutoLogin:</option>
+	
+	<option value="//api/name/configureControllerInitial">&nbsp;&nbsp;&nbsp;&nbsp;- configureControllerInitial</option>
+	
+	<option value="//api/name/configureControllerOnAppearance">&nbsp;&nbsp;&nbsp;&nbsp;- configureControllerOnAppearance</option>
+	
+	<option value="//api/name/configureResponseDescriptor">&nbsp;&nbsp;&nbsp;&nbsp;- configureResponseDescriptor</option>
+	
+	<option value="//api/name/didRotateFromInterfaceOrientation:">&nbsp;&nbsp;&nbsp;&nbsp;- didRotateFromInterfaceOrientation:</option>
+	
+	<option value="//api/name/doLogin:">&nbsp;&nbsp;&nbsp;&nbsp;- doLogin:</option>
+	
+	<option value="//api/name/moveLoginStuffDown">&nbsp;&nbsp;&nbsp;&nbsp;- moveLoginStuffDown</option>
+	
+	<option value="//api/name/moveLoginStuffUp">&nbsp;&nbsp;&nbsp;&nbsp;- moveLoginStuffUp</option>
+	
+	<option value="//api/name/performSuccessfulLogin">&nbsp;&nbsp;&nbsp;&nbsp;- performSuccessfulLogin</option>
+	
+	<option value="//api/name/restService:didFinishRestCallWithErrors:andDescription:">&nbsp;&nbsp;&nbsp;&nbsp;- restService:didFinishRestCallWithErrors:andDescription:</option>
+	
+	<option value="//api/name/restService:didFinishRestCallWithResponse:andDescription:">&nbsp;&nbsp;&nbsp;&nbsp;- restService:didFinishRestCallWithResponse:andDescription:</option>
+	
+	<option value="//api/name/setErrorMessage:">&nbsp;&nbsp;&nbsp;&nbsp;- setErrorMessage:</option>
+	
+	<option value="//api/name/textFieldDidEndEditing:">&nbsp;&nbsp;&nbsp;&nbsp;- textFieldDidEndEditing:</option>
+	
+	<option value="//api/name/textFieldShouldBeginEditing:">&nbsp;&nbsp;&nbsp;&nbsp;- textFieldShouldBeginEditing:</option>
+	
+	<option value="//api/name/textFieldShouldReturn:">&nbsp;&nbsp;&nbsp;&nbsp;- textFieldShouldReturn:</option>
+	
+	<option value="//api/name/touchesBegan:withEvent:">&nbsp;&nbsp;&nbsp;&nbsp;- touchesBegan:withEvent:</option>
+	
+	<option value="//api/name/viewDidLoad">&nbsp;&nbsp;&nbsp;&nbsp;- viewDidLoad</option>
+	
+	<option value="//api/name/viewWillAppear:">&nbsp;&nbsp;&nbsp;&nbsp;- viewWillAppear:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handle the UI-Controls">Handle the UI-Controls</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Communication with the Server">Communication with the Server</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling Core Data">Handling Core Data</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing the View">Managing the View</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Responding to View Rotation Events">Responding to View Rotation Events</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handle Users Interaction">Handle Users Interaction</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Communication with the Server">Communication with the Server</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Responding to View Events">Responding to View Events</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Using a Storyboard">Using a Storyboard</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuration">Configuration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Designing the View">Designing the View</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Textfield Editing">Managing Textfield Editing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing the Restcalls">Managing the Restcalls</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/authenticationSuccessfull">authenticationSuccessfull</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorMsgLabel">errorMsgLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loginButton">loginButton</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loginIsUp">loginIsUp</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loginSettings">loginSettings</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loginView">loginView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/managedObjectContext">managedObjectContext</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/passwordInput">passwordInput</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rememberMeLabel">rememberMeLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rememberMeSwitch">rememberMeSwitch</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restService">restService</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/roundRectangleView">roundRectangleView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userIdInput">userIdInput</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adaptStyle">adaptStyle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changeAutoLogin:">changeAutoLogin:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/configureControllerInitial">configureControllerInitial</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/configureControllerOnAppearance">configureControllerOnAppearance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/configureResponseDescriptor">configureResponseDescriptor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didRotateFromInterfaceOrientation:">didRotateFromInterfaceOrientation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/doLogin:">doLogin:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/moveLoginStuffDown">moveLoginStuffDown</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/moveLoginStuffUp">moveLoginStuffUp</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSuccessfulLogin">performSuccessfulLogin</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restService:didFinishRestCallWithErrors:andDescription:">restService:didFinishRestCallWithErrors:andDescription:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restService:didFinishRestCallWithResponse:andDescription:">restService:didFinishRestCallWithResponse:andDescription:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setErrorMessage:">setErrorMessage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textFieldDidEndEditing:">textFieldDidEndEditing:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textFieldShouldBeginEditing:">textFieldShouldBeginEditing:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textFieldShouldReturn:">textFieldShouldReturn:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/touchesBegan:withEvent:">touchesBegan:withEvent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidLoad">viewDidLoad</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewWillAppear:">viewWillAppear:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="WLLoginViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">WLLoginViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">UITextFieldDelegate<br /><a href="../Protocols/WLDesignGuide.html">WLDesignGuide</a><br /><a href="../Protocols/WLRestServiceProtocol.html">WLRestServiceProtocol</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">WLLoginViewController.h<br />WLLoginViewController.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class handles the Login-UI.</p>
+
+<p>On this View the user can put his logindata to login to the wave-intranet.</p>
+
+<p>There are two controls to get the users logininput (<a href="#//api/name/userIdInput">userIdInput</a>, <a href="#//api/name/passwordInput">passwordInput</a>).
+To save the logininput in core data the <a href="#//api/name/rememberMeSwitch">rememberMeSwitch</a> can be used.
+To confirm the login action, <a href="#//api/name/loginButton">loginButton</a> is used.
+Errors are shown on the <a href="#//api/name/errorMsgLabel">errorMsgLabel</a>.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Handle the UI-Controls" name="task_Handle the UI-Controls"></a>
+						<h3 class="subsubtitle task-title">Handle the UI-Controls</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loginView">&nbsp;&nbsp;loginView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorMsgLabel">&nbsp;&nbsp;errorMsgLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rememberMeSwitch">&nbsp;&nbsp;rememberMeSwitch</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userIdInput">&nbsp;&nbsp;userIdInput</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/passwordInput">&nbsp;&nbsp;passwordInput</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loginButton">&nbsp;&nbsp;loginButton</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/roundRectangleView">&nbsp;&nbsp;roundRectangleView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rememberMeLabel">&nbsp;&nbsp;rememberMeLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Communication with the Server" name="task_Communication with the Server"></a>
+						<h3 class="subsubtitle task-title">Communication with the Server</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restService">&nbsp;&nbsp;restService</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling Core Data" name="task_Handling Core Data"></a>
+						<h3 class="subsubtitle task-title">Handling Core Data</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/managedObjectContext">&nbsp;&nbsp;managedObjectContext</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing the View" name="task_Managing the View"></a>
+						<h3 class="subsubtitle task-title">Managing the View</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loginSettings">&nbsp;&nbsp;loginSettings</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/authenticationSuccessfull">&nbsp;&nbsp;authenticationSuccessfull</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidLoad">&ndash;&nbsp;viewDidLoad</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/moveLoginStuffUp">&ndash;&nbsp;moveLoginStuffUp</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/moveLoginStuffDown">&ndash;&nbsp;moveLoginStuffDown</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setErrorMessage:">&ndash;&nbsp;setErrorMessage:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Responding to View Rotation Events" name="task_Responding to View Rotation Events"></a>
+						<h3 class="subsubtitle task-title">Responding to View Rotation Events</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loginIsUp">&nbsp;&nbsp;loginIsUp</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didRotateFromInterfaceOrientation:">&ndash;&nbsp;didRotateFromInterfaceOrientation:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handle Users Interaction" name="task_Handle Users Interaction"></a>
+						<h3 class="subsubtitle task-title">Handle Users Interaction</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changeAutoLogin:">&ndash;&nbsp;changeAutoLogin:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/touchesBegan:withEvent:">&ndash;&nbsp;touchesBegan:withEvent:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Communication with the Server" name="task_Communication with the Server"></a>
+						<h3 class="subsubtitle task-title">Communication with the Server</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/doLogin:">&ndash;&nbsp;doLogin:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Responding to View Events" name="task_Responding to View Events"></a>
+						<h3 class="subsubtitle task-title">Responding to View Events</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewWillAppear:">&ndash;&nbsp;viewWillAppear:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Using a Storyboard" name="task_Using a Storyboard"></a>
+						<h3 class="subsubtitle task-title">Using a Storyboard</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performSuccessfulLogin">&ndash;&nbsp;performSuccessfulLogin</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuration" name="task_Configuration"></a>
+						<h3 class="subsubtitle task-title">Configuration</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/configureResponseDescriptor">&ndash;&nbsp;configureResponseDescriptor</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/configureControllerOnAppearance">&ndash;&nbsp;configureControllerOnAppearance</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/configureControllerInitial">&ndash;&nbsp;configureControllerInitial</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Designing the View" name="task_Designing the View"></a>
+						<h3 class="subsubtitle task-title">Designing the View</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adaptStyle">&ndash;&nbsp;adaptStyle</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Textfield Editing" name="task_Managing Textfield Editing"></a>
+						<h3 class="subsubtitle task-title">Managing Textfield Editing</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textFieldShouldReturn:">&ndash;&nbsp;textFieldShouldReturn:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textFieldShouldBeginEditing:">&ndash;&nbsp;textFieldShouldBeginEditing:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textFieldDidEndEditing:">&ndash;&nbsp;textFieldDidEndEditing:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing the Restcalls" name="task_Managing the Restcalls"></a>
+						<h3 class="subsubtitle task-title">Managing the Restcalls</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restService:didFinishRestCallWithErrors:andDescription:">&ndash;&nbsp;restService:didFinishRestCallWithErrors:andDescription:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restService:didFinishRestCallWithResponse:andDescription:">&ndash;&nbsp;restService:didFinishRestCallWithResponse:andDescription:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/authenticationSuccessfull" title="authenticationSuccessfull"></a>
+	<h3 class="subsubtitle method-title">authenticationSuccessfull</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A bool value to indicate weather user did a successfull login.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property bool authenticationSuccessfull</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A bool value to indicate weather user did a successfull login.</p>
+
+<p>The value is set to prevent the system from doing login again after beeing logged out.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/errorMsgLabel" title="errorMsgLabel"></a>
+	<h3 class="subsubtitle method-title">errorMsgLabel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The error message label shows error messages on error in login action. Is a subview of <a href="#//api/name/loginView">loginView</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *errorMsgLabel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The error message label shows error messages on error in login action. Is a subview of <a href="#//api/name/loginView">loginView</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loginButton" title="loginButton"></a>
+	<h3 class="subsubtitle method-title">loginButton</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The Login Button initializes the <a href="#//api/name/doLogin:">doLogin:</a> Action. Is a subview of <a href="#//api/name/roundRectangleView">roundRectangleView</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *loginButton</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The Login Button initializes the <a href="#//api/name/doLogin:">doLogin:</a> Action. Is a subview of <a href="#//api/name/roundRectangleView">roundRectangleView</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loginIsUp" title="loginIsUp"></a>
+	<h3 class="subsubtitle method-title">loginIsUp</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A bool value to shows if <a href="#//api/name/loginView">loginView</a> is moved up</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property bool loginIsUp</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A bool value to shows if <a href="#//api/name/loginView">loginView</a> is moved up</p>
+
+<p>The value is set in landscape mode to move the login view up when keyboard appears.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loginSettings" title="loginSettings"></a>
+	<h3 class="subsubtitle method-title">loginSettings</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="../Classes/LoginSettings.html">LoginSettings</a> to handle the behaviour of the loginpage, saved in core data.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property LoginSettings *loginSettings</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <a href="../Classes/LoginSettings.html">LoginSettings</a> to handle the behaviour of the loginpage, saved in core data.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loginView" title="loginView"></a>
+	<h3 class="subsubtitle method-title">loginView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The Login View summarizes all LoginView-Controls</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIView *loginView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The Login View summarizes all LoginView-Controls</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/managedObjectContext" title="managedObjectContext"></a>
+	<h3 class="subsubtitle method-title">managedObjectContext</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the managed object context for the current session.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is the managed object context for the current session.</p>
+
+<p>Is needed to handle the <a href="../Classes/LoginSettings.html">LoginSettings</a> in the controller.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/passwordInput" title="passwordInput"></a>
+	<h3 class="subsubtitle method-title">passwordInput</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The PasswordInput is a Textfield to enter the loginpassword. Is a subview of <a href="#//api/name/roundRectangleView">roundRectangleView</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UITextField *passwordInput</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The PasswordInput is a Textfield to enter the loginpassword. Is a subview of <a href="#//api/name/roundRectangleView">roundRectangleView</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rememberMeLabel" title="rememberMeLabel"></a>
+	<h3 class="subsubtitle method-title">rememberMeLabel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This label shows the text of the autorememberfunction. Is a subview of <a href="#//api/name/roundRectangleView">roundRectangleView</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *rememberMeLabel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This label shows the text of the autorememberfunction. Is a subview of <a href="#//api/name/roundRectangleView">roundRectangleView</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rememberMeSwitch" title="rememberMeSwitch"></a>
+	<h3 class="subsubtitle method-title">rememberMeSwitch</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The RemermberMeSwitch is a switch to set the users autoremember function. Is a subview of <a href="#//api/name/roundRectangleView">roundRectangleView</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UISwitch *rememberMeSwitch</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The RemermberMeSwitch is a switch to set the users autoremember function. Is a subview of <a href="#//api/name/roundRectangleView">roundRectangleView</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restService" title="restService"></a>
+	<h3 class="subsubtitle method-title">restService</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This object handles the communication with the wave-server. Mehtods are declared in <a href="../Classes/WLBaseRest.html">WLBaseRest</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) WLBaseRest *restService</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This object handles the communication with the wave-server. Mehtods are declared in <a href="../Classes/WLBaseRest.html">WLBaseRest</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/roundRectangleView" title="roundRectangleView"></a>
+	<h3 class="subsubtitle method-title">roundRectangleView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The RoundRectangleView summarizes all user controls in one view. Is a subview of <a href="#//api/name/loginView">loginView</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIView *roundRectangleView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The RoundRectangleView summarizes all user controls in one view. Is a subview of <a href="#//api/name/loginView">loginView</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userIdInput" title="userIdInput"></a>
+	<h3 class="subsubtitle method-title">userIdInput</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The UserIdInput is a Textfield to enter the loginname. Is a subview of <a href="#//api/name/roundRectangleView">roundRectangleView</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UITextField *userIdInput</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The UserIdInput is a Textfield to enter the loginname. Is a subview of <a href="#//api/name/roundRectangleView">roundRectangleView</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/adaptStyle" title="adaptStyle"></a>
+	<h3 class="subsubtitle method-title">adaptStyle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This Method handles special designed controls on login view controller</p>
+
+<p>On this view style is always the same and independent from <a href="../Classes/CommonSettings.html">CommonSettings</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)adaptStyle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This Method handles special designed controls on login view controller</p>
+
+<p>On this view style is always the same and independent from <a href="../Classes/CommonSettings.html">CommonSettings</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changeAutoLogin:" title="changeAutoLogin:"></a>
+	<h3 class="subsubtitle method-title">changeAutoLogin:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This mehtod handles the system on changing the <a href="#//api/name/rememberMeSwitch">rememberMeSwitch</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)changeAutoLogin:(id)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>The <a href="#//api/name/rememberMeSwitch">rememberMeSwitch</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This mehtod handles the system on changing the <a href="#//api/name/rememberMeSwitch">rememberMeSwitch</a>.</p>
+
+<p>The property rememberMe of the <a href="../Classes/LoginSettings.html">LoginSettings</a> model ist set in this method.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/configureControllerInitial" title="configureControllerInitial"></a>
+	<h3 class="subsubtitle method-title">configureControllerInitial</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The initial controller configuration method.</p>
+
+<p>On <a href="#//api/name/viewDidLoad">viewDidLoad</a> there are many initial steps configuring the view an the application:</p>
+
+<ul>
+<li>design is set</li>
+<li><a href="#//api/name/managedObjectContext">managedObjectContext</a> and RKObjectManager are instantiated</li>
+<li>response descriptor is configured</li>
+<li>delegates of controls are set</li>
+<li><a href="#//api/name/loginSettings">loginSettings</a> are read from core date</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)configureControllerInitial</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The initial controller configuration method.</p>
+
+<p>On <a href="#//api/name/viewDidLoad">viewDidLoad</a> there are many initial steps configuring the view an the application:</p>
+
+<ul>
+<li>design is set</li>
+<li><a href="#//api/name/managedObjectContext">managedObjectContext</a> and RKObjectManager are instantiated</li>
+<li>response descriptor is configured</li>
+<li>delegates of controls are set</li>
+<li><a href="#//api/name/loginSettings">loginSettings</a> are read from core date</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/configureControllerOnAppearance" title="configureControllerOnAppearance"></a>
+	<h3 class="subsubtitle method-title">configureControllerOnAppearance</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The controller configuration method on appearance.</p>
+
+<p>View appears on first launch an on login. Because of that on appearance there is a reset to the view.
+The <a href="#//api/name/restService">restService</a> is initialized and the <a href="../Classes/LoginSettings.html">LoginSettings</a> may be displayed on the view. On first launch autologin is possible.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)configureControllerOnAppearance</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The controller configuration method on appearance.</p>
+
+<p>View appears on first launch an on login. Because of that on appearance there is a reset to the view.
+The <a href="#//api/name/restService">restService</a> is initialized and the <a href="../Classes/LoginSettings.html">LoginSettings</a> may be displayed on the view. On first launch autologin is possible.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/configureResponseDescriptor" title="configureResponseDescriptor"></a>
+	<h3 class="subsubtitle method-title">configureResponseDescriptor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This mehtod configures the response descriptor for the application.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)configureResponseDescriptor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This mehtod configures the response descriptor for the application.</p>
+
+<p>The configuration uses RKObjectManager out of RestKit framework and Methods from <a href="../Classes/WLResponseDescriptor.html">WLResponseDescriptor</a>.
+Response descriptor is required to configure the rest responses.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didRotateFromInterfaceOrientation:" title="didRotateFromInterfaceOrientation:"></a>
+	<h3 class="subsubtitle method-title">didRotateFromInterfaceOrientation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent to the view controller after the user interface rotates.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)<em>fromInterfaceOrientation</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fromInterfaceOrientation</em></dt>
+			<dd><p>The old orientation of the user interface. For possible values, see UIInterfaceOrientation.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sent to the view controller after the user interface rotates.</p>
+
+<p>didRotateFromInterfaceOrientation is an ihnherited method from UIViewController.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/doLogin:" title="doLogin:"></a>
+	<h3 class="subsubtitle method-title">doLogin:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This mehtod handles the users login.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)doLogin:(id)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>The <a href="#//api/name/loginButton">loginButton</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This mehtod handles the users login.</p>
+
+<p>On clicking the <a href="#//api/name/loginButton">loginButton</a> several operations are done:</p>
+
+<ul>
+<li>check for correct user input</li>
+<li>create the parameter to send to the server</li>
+<li>restcall</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/moveLoginStuffDown" title="moveLoginStuffDown"></a>
+	<h3 class="subsubtitle method-title">moveLoginStuffDown</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called, when keyboard disappears in landscape orientation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)moveLoginStuffDown</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called, when keyboard disappears in landscape orientation.</p>
+
+<p>This method moves the <a href="#//api/name/loginView">loginView</a> down to be on default position.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/moveLoginStuffUp" title="moveLoginStuffUp"></a>
+	<h3 class="subsubtitle method-title">moveLoginStuffUp</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called, when keyboard appears in landscape orientation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)moveLoginStuffUp</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called, when keyboard appears in landscape orientation.</p>
+
+<p>This method moves the <a href="#//api/name/loginView">loginView</a> up to be seen when keyboard is up.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performSuccessfulLogin" title="performSuccessfulLogin"></a>
+	<h3 class="subsubtitle method-title">performSuccessfulLogin</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>performing the &ldquo;showAfterLogin&rdquo; segue to get to the mainmenu</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)performSuccessfulLogin</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>performing the &ldquo;showAfterLogin&rdquo; segue to get to the mainmenu</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restService:didFinishRestCallWithErrors:andDescription:" title="restService:didFinishRestCallWithErrors:andDescription:"></a>
+	<h3 class="subsubtitle method-title">restService:didFinishRestCallWithErrors:andDescription:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shows an error message when rest call finished with error.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)restService:(id)<em>restService</em> didFinishRestCallWithErrors:(NSString *)<em>errorMessage</em> andDescription:(NSString *)<em>description</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>restService</em></dt>
+			<dd><p>The rest service object caused the error.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorMessage</em></dt>
+			<dd><p>The error message from rest call.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>description</em></dt>
+			<dd><p>The rest calls description. call.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Shows an error message when rest call finished with error.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Protocols/WLRestServiceProtocol.html">WLRestServiceProtocol</a>.</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restService:didFinishRestCallWithResponse:andDescription:" title="restService:didFinishRestCallWithResponse:andDescription:"></a>
+	<h3 class="subsubtitle method-title">restService:didFinishRestCallWithResponse:andDescription:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Handling finishing different rest calls on starting the application.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)restService:(id)<em>restService</em> didFinishRestCallWithResponse:(id)<em>response</em> andDescription:(NSString *)<em>description</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>restService</em></dt>
+			<dd><p>The rest service object that has finished rest call.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>response</em></dt>
+			<dd><p>The response from the server.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>description</em></dt>
+			<dd><p>The rest calls description.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Handling finishing different rest calls on starting the application.</p>
+
+<p>Sets the <a href="#//api/name/authenticationSuccessfull">authenticationSuccessfull</a> to true, when login rest call finished successfull.
+Leave login view on finishing the user profile request.
+Do nothing on finishing the user vacation information request.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Protocols/WLRestServiceProtocol.html">WLRestServiceProtocol</a>.</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setErrorMessage:" title="setErrorMessage:"></a>
+	<h3 class="subsubtitle method-title">setErrorMessage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called to show an errormessage.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setErrorMessage:(NSString *)<em>message</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>The message displayed on the view. A null message resets the displayed message.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called to show an errormessage.</p>
+
+<p>This method is called to display a red text in the <a href="#//api/name/errorMsgLabel">errorMsgLabel</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textFieldDidEndEditing:" title="textFieldDidEndEditing:"></a>
+	<h3 class="subsubtitle method-title">textFieldDidEndEditing:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that editing stopped for the specified text field.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)textFieldDidEndEditing:(UITextField *)<em>textField</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>textField</em></dt>
+			<dd><p>The text field for which editing ended.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Tells the delegate that editing stopped for the specified text field.</p>
+
+<p>When user ends to edit a textfield keyboard disappears and <a href="#//api/name/loginView">loginView</a> is moved down, when interface orientation is landscape.
+This mehtod is described in the UITextFieldDelegate Protocol.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textFieldShouldBeginEditing:" title="textFieldShouldBeginEditing:"></a>
+	<h3 class="subsubtitle method-title">textFieldShouldBeginEditing:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate if editing should begin in the specified text field.</p>
+
+<p>When user starts to edit a textfield keyboard appears and <a href="#//api/name/loginView">loginView</a> is moved up, when interface orientation is landscape.
+This mehtod is described in the UITextFieldDelegate Protocol.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)textFieldShouldBeginEditing:(UITextField *)<em>textField</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>textField</em></dt>
+			<dd><p>The text field for which editing is about to begin.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if an editing session should be initiated; otherwise, NO to disallow editing.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Asks the delegate if editing should begin in the specified text field.</p>
+
+<p>When user starts to edit a textfield keyboard appears and <a href="#//api/name/loginView">loginView</a> is moved up, when interface orientation is landscape.
+This mehtod is described in the UITextFieldDelegate Protocol.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textFieldShouldReturn:" title="textFieldShouldReturn:"></a>
+	<h3 class="subsubtitle method-title">textFieldShouldReturn:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate if the text field should process the pressing of the return button.</p>
+
+<p>Calls <a href="#//api/name/doLogin:">doLogin:</a> on pressing the return button. This mehtod is described in the UITextFieldDelegate Protocol.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)textFieldShouldReturn:(UITextField *)<em>textField</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>textField</em></dt>
+			<dd><p>The text field whose return button was pressed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if an editing session should be initiated; otherwise, NO to disallow editing.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Asks the delegate if the text field should process the pressing of the return button.</p>
+
+<p>Calls <a href="#//api/name/doLogin:">doLogin:</a> on pressing the return button. This mehtod is described in the UITextFieldDelegate Protocol.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/touchesBegan:withEvent:" title="touchesBegan:withEvent:"></a>
+	<h3 class="subsubtitle method-title">touchesBegan:withEvent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>On touchesBegan keyboard is dismissed and <a href="#//api/name/loginView">loginView</a> moved down when up.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)touchesBegan:(NSSet *)<em>touches</em> withEvent:(UIEvent *)<em>event</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>touches</em></dt>
+			<dd><p>A set of UITouch instances that represent the touches for the starting phase of the event represented by event.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>event</em></dt>
+			<dd><p>An object representing the event to which the touches belong.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>On touchesBegan keyboard is dismissed and <a href="#//api/name/loginView">loginView</a> moved down when up.</p>
+
+<p>touchesBegan is an ihnherited method from UIResponder:
+&ldquo;Tells the receiver when one or more fingers touch down in a view or window.&rdquo;</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDidLoad" title="viewDidLoad"></a>
+	<h3 class="subsubtitle method-title">viewDidLoad</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Doing some additional configuration on viewDidLoad to see in <a href="#//api/name/configureControllerInitial">configureControllerInitial</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)viewDidLoad</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Doing some additional configuration on viewDidLoad to see in <a href="#//api/name/configureControllerInitial">configureControllerInitial</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewWillAppear:" title="viewWillAppear:"></a>
+	<h3 class="subsubtitle method-title">viewWillAppear:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Doing some configuration on appearance to see in <a href="#//api/name/configureControllerOnAppearance">configureControllerOnAppearance</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)viewWillAppear:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>True when view appears animated.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Doing some configuration on appearance to see in <a href="#//api/name/configureControllerOnAppearance">configureControllerOnAppearance</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WLLoginViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 sidion. All rights reserved. (Last updated: 2013-09-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

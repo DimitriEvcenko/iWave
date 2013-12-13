@@ -1,0 +1,171 @@
+
+/* Class = "IBUILabel"; text = "Email"; ObjectID = "0Do-nm-d6D"; */
+"0Do-nm-d6D.text" = "Email";
+
+/* Class = "IBUILabel"; text = "Comment"; ObjectID = "0dB-NU-M87"; */
+"0dB-NU-M87.text" = "Kommentar";
+
+/* Class = "IBUINavigationItem"; title = "Root View Controller"; ObjectID = "1JZ-RQ-lDg"; */
+"1JZ-RQ-lDg.title" = "Root View Controller";
+
+/* Class = "IBUILabel"; text = "Autologin"; ObjectID = "2P7-Pk-jcr"; */
+"2P7-Pk-jcr.text" = "Automatische Anmeldung";
+
+"4P5-Xz-bqo.text" = "Letzte Anmeldung";
+
+/* Class = "IBUILabel"; text = "Password"; ObjectID = "4Nm-yp-Edn"; */
+"4Nm-yp-Edn.text" = "Passwort";
+
+/* Class = "IBUILabel"; text = "Content"; ObjectID = "5Y7-13-JUG"; */
+"5Y7-13-JUG.text" = "Inhalt";
+
+/* Class = "IBUILabel"; text = "Status"; ObjectID = "5YI-YD-zba"; */
+"5YI-YD-zba.text" = "Status";
+
+/* Class = "IBUITextField"; placeholder = "Userid"; ObjectID = "9My-Uz-GeE"; */
+"9My-Uz-GeE.placeholder" = "Benutzerid";
+
+/* Class = "IBUILabel"; text = "From"; ObjectID = "ATK-Ib-bXe"; */
+"ATK-Ib-bXe.text" = "Von";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Login"; ObjectID = "BJZ-CN-ePf"; */
+"BJZ-CN-ePf.headerTitle" = "Anmeldung";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Vacationdemand"; ObjectID = "BXf-yJ-j06"; */
+"BXf-yJ-j06.headerTitle" = "Urlaubsantrag";
+
+/* Class = "IBUILabel"; text = "Date"; ObjectID = "DvR-My-zsx"; */
+"DvR-My-zsx.text" = "Datum";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "E3X-VW-6K8"; */
+"E3X-VW-6K8.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Department"; ObjectID = "Hdc-eg-ljj"; */
+"Hdc-eg-ljj.text" = "Email";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "Hla-HA-tN5"; */
+"Hla-HA-tN5.text" = "Untertitel";
+
+/* Class = "IBUINavigationItem"; title = "Mainmenu"; ObjectID = "JuZ-YG-y8B"; */
+"JuZ-YG-y8B.title" = "Hauptmenü";
+
+/* Class = "IBUILabel"; text = "remember me?"; ObjectID = "KxL-1H-Gyr"; */
+"KxL-1H-Gyr.text" = "angemeldet bleiben";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "Lld-65-hnU"; */
+"Lld-65-hnU.text" = "Untertitel";
+
+/* Class = "IBUILabel"; text = "Type"; ObjectID = "Mgp-Z7-9N8"; */
+"Mgp-Z7-9N8.text" = "Typ";
+
+/* Class = "IBUINavigationItem"; title = "Vacation"; ObjectID = "N7f-H9-sVg"; */
+"N7f-H9-sVg.title" = "Urlaub";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Usability"; ObjectID = "OO7-o9-tXL"; */
+"OO7-o9-tXL.headerTitle" = "Bedienung";
+
+/* Class = "IBUITabBarItem"; title = "Demands"; ObjectID = "Obh-Og-aYN"; */
+"Obh-Og-aYN.title" = "Anfragen";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "P8b-7d-wSd"; */
+"P8b-7d-wSd.text" = "Untertitel";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "QEs-ZN-81j"; */
+"QEs-ZN-81j.text" = "Untertitel";
+
+/* Class = "IBUINavigationItem"; title = "Root View Controller"; ObjectID = "Rsc-7s-CZV"; */
+"Rsc-7s-CZV.title" = "Root View Controller";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "RxC-VZ-ANz"; */
+"RxC-VZ-ANz.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Display Name"; ObjectID = "Udi-Rg-cEN"; */
+"Udi-Rg-cEN.text" = "Kürzel";
+
+/* Class = "IBUILabel"; text = "Username"; ObjectID = "VKV-Cq-fFU"; */
+"VKV-Cq-fFU.text" = "Benutzername";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "XZv-rX-Xn3"; */
+"XZv-rX-Xn3.text" = "Untertitel";
+
+/* Class = "IBUILabel"; text = "Lastname"; ObjectID = "ZNU-5n-UFz"; */
+"ZNU-5n-UFz.text" = "Nachname";
+
+/* Class = "IBUITextField"; text = "test"; ObjectID = "Zhy-q1-VPO"; */
+"Zhy-q1-VPO.text" = "test";
+
+/* Class = "IBUILabel"; text = "To"; ObjectID = "cJ0-gu-Nm8"; */
+"cJ0-gu-Nm8.text" = "Bis";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "chb-Dz-viB"; */
+"chb-Dz-viB.text" = "Untertitel";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "ci6-pk-A7B"; */
+"ci6-pk-A7B.text" = "Titel";
+
+/* Class = "IBUIImageView"; accessibilityLabel = "In progress!"; ObjectID = "cqU-ej-ETo"; */
+"cqU-ej-ETo.accessibilityLabel" = "In Arbeit!";
+
+/* Class = "IBUILabel"; text = "Zeitraum"; ObjectID = "crw-gO-o8f"; */
+"crw-gO-o8f.text" = "Zeitraum";
+
+/* Class = "IBUILabel"; text = "Design"; ObjectID = "d4l-Gr-UxD"; */
+"d4l-Gr-UxD.text" = "Design";
+
+/* Class = "IBUITextView"; text = " "; ObjectID = "dZL-Fm-hFO"; */
+"dZL-Fm-hFO.text" = " ";
+
+/* Class = "IBUINavigationItem"; title = "Settings"; ObjectID = "f0b-09-65j"; */
+"f0b-09-65j.title" = "Einstellungen";
+
+/* Class = "IBUILabel"; text = "Firstname"; ObjectID = "fHZ-92-JkS"; */
+"fHZ-92-JkS.text" = "Vorname";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Contact"; ObjectID = "h3z-KN-LiV"; */
+"h3z-KN-LiV.headerTitle" = "Kontakt";
+
+/* Class = "IBUILabel"; text = "Telephone"; ObjectID = "h8V-Op-ecc"; */
+"h8V-Op-ecc.text" = "Telefon";
+
+/* Class = "IBUILabel"; text = "Control"; ObjectID = "i5F-XG-f3k"; */
+"i5F-XG-f3k.text" = "Was das?";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "iOq-6P-fuf"; */
+"iOq-6P-fuf.text" = "Untertitel";
+
+/* Class = "IBUILabel"; text = "Detail"; ObjectID = "iWm-ER-ROD"; */
+"iWm-ER-ROD.text" = "Detail";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "k8f-DH-Hpd"; */
+"k8f-DH-Hpd.text" = "Label";
+
+/* Class = "IBUITabBarItem"; title = "Calendar"; ObjectID = "nBI-Ez-adP"; */
+"nBI-Ez-adP.title" = "Kalender";
+
+/* Class = "IBUITextField"; placeholder = "Password"; ObjectID = "qB4-nx-DhO"; */
+"qB4-nx-DhO.placeholder" = "Passwort";
+
+/* Class = "IBUILabel"; text = "Type"; ObjectID = "qyG-aA-4dA"; */
+"qyG-aA-4dA.text" = "Typ";
+
+/* Class = "IBUITabBarItem"; title = "Urlaub"; ObjectID = "umd-3w-FPw"; */
+"umd-3w-FPw.title" = "Urlaub";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Profile"; ObjectID = "vhz-22-aZ0"; */
+"vhz-22-aZ0.headerTitle" = "Profil";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "w3m-2x-UEg"; */
+"w3m-2x-UEg.text" = "Untertitel";
+
+/* Class = "IBUIButton"; normalTitle = "Anmelden"; ObjectID = "zkc-ow-YlN"; */
+"zkc-ow-YlN.normalTitle" = "Anmelden";
+
+"Xf-yJ-j06.headerTitle" = "Urlaubsantrag";
+
+"h2Q-Yj-N0u.title" = "Ablehnen";
+
+"A1a-18-aA8.title" = "Beantragen";
+
+"hc5-ft-Qkz.segmentControl.title" = "Heute";
+
+"4VL-l6-DLa.normalTitle" = "Einführung";

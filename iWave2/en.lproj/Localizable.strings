@@ -1,0 +1,106 @@
+/* 
+  Localizable.strings
+  iWave2
+
+  Created by Marco Lorenz on 26.04.13.
+  Copyright (c) 2013 Marco Lorenz. All rights reserved.
+*/
+
+/* Login Errors */
+
+"NoUsernameOrPassword" = "Please enter username and password.";
+
+//Navigation
+"Mainmenu" = "Wavemenu";
+"Settings" = "Profile & Settings";
+"Vacation" = "Caribbean";
+"Marketplace" = "Marketplace";
+"News" = "News";
+"About" = "About";
+"Logout" = "Logout";
+
+//Settings
+"LoginSettings" = "Login";
+"ProfileSettings" = "Profile";
+"UsabilitySettings" = "Control";
+"ContactSettings" = "Contact";
+"ShowSettings" = "Show Categories";
+"lastLogin" = "Last Login";
+"lastLoginText" = "Your last Login-Date";
+"Manager" = "Manager";
+"Teammates" = "Team Mates";
+"DirectReports" = "Direct Reports";
+
+//Settings Text
+"Buttons" = "Buttons";
+"Gestures" = "Gestures";
+"ButtonsAndGestures" = "Buttons and Gestures";
+"SidionLight" = "Sidion-Light";
+"SidionDark" = "Sidion-Dark";
+"SidionBlue" = "Sidion-Blue";
+"SidionSand" = "Sidion-Sand";
+
+//VacationDemandType
+"HOLIDAY" = "Holiday";
+"PARENTLEAVE" = "Parentalleave";
+"SEMINR" = "Seminar";
+"FLEXTIME" = "Flexible Time";
+"SABBATICAL" = "Sabbatical";
+
+//VacationDemandStatus
+"PENDING"="Pending";
+"REJECTED" = "Rejected";
+"APPROVED" = "Approved";
+"NOTSEND" = "Unrequested";
+"TEAMVACATION" = "Pending Teamrequests";
+"OTHERREPORTSVACATION" = "Other pending Requests";
+
+//VacationDemand
+"VacationDemand" = "Vacationdemand ";
+"VacationDemandAdditional" = "of ";
+"Demand" = "Demands";
+"Calendar" = "Calendar";
+"UsersVacationDemand" = "This is your vacation demand";
+"SendDemand" = "Request";
+"ApproveDemand" = "Approve";
+"CalendarToday" = "Today";
+"VacationOverview" = "Vacation Demands";
+"DaysString" = "days";
+"InvalideVacationDemand" = "Your vacation demand is invalid. \nProbably it overlaps with another or has a start- or enddate on a weekend.";
+"IncompleteVacationDemand" = "Missing details on creation of vacation demand.";
+
+//Accessibility
+"AccessibiltyDateFormat" = "EEEE, MMMM, d";
+"Accessibilty_selected" = "selected";
+"is_vacation" = "Vacation day";
+"NextYearString" = "Next year";
+"NextMonthString" = "Next month";
+"PreviousMonthString" = "Previous month";
+"PreviousYearString" = "Previous year";
+
+//Error
+"Error" = "Error";
+"VacationOverlappingErrorHeader" = "Overlapping";
+"VacationOverlappingError" = "The selected day is already a vacation day!";
+"NoManagerErrorHeader" = "No manager";
+"NoManagerErrorMessage" = "You can not request vacation. Who should approve it?";
+"noManagerError" = "No line manager information found in your user data. Vacation you applied for cannot be processed.";
+"InvalidTokenError" = "Invalid token, you have been disconnected";
+
+//Tutorial/Additional
+"HelloUser" = "Hello {0}";
+"GettingStarted" = "Welcome to iWave! \nTo use Carribean here, we gonna create a trial vacation demand.\n-Tap on the screen to continue.-";
+"FirstStep" = "To get to iWave calendar tap here.";
+"SecondStep" = "Now tap on the first vacation day in calendar...";
+"ThirdStep" = "...and now tap the last one.";
+"FourthStep" = "Just select the vacation type and write a comment...";
+"LastStep" = "...and request!";
+"TutorialFinished" = "Ready! It's really that easy in iWave. \n\nP.S. To do this introduction again, go to information menu.";
+"OneWeekWithoutiWave" = "...wow it's really you?";
+"OneMonthWithoutiWave" = "I think it's time to request for vacation.";
+"HalfYearWithoutiWave" = "Please deliver your iPad \nYou do not use it anyway.";
+"TutorialAbort" = "Okay, seems you don't need help.\n If you have any questions, do this introduction again in celecting the information menu.";
+"AbortHeader" = "Abortion";
+"GreatVacationQuestion" = "welcome back, \nI hope you had a great vacation.";
+"GreatVacationWishes" = "If this is your last visit here, i wish you a great vacation!";
+"VacationInVacation" = "What are you doing here, \nyou should be in vacation!";

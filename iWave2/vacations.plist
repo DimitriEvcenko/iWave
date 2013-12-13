@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>VacationDemands</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<integer>0</integer>
+			<key>userDisplayName</key>
+			<string>Tobias Weidemann</string>
+			<key>startDate</key>
+			<date>2013-01-08T15:40:30Z</date>
+			<key>endDate</key>
+			<date>2013-01-15T15:40:37Z</date>
+			<key>comment</key>
+			<string>Tobias Comment</string>
+			<key>createdOn</key>
+			<date>2013-01-08T15:41:06Z</date>
+			<key>demandType</key>
+			<string>Holiday</string>
+			<key>demandStatus</key>
+			<string>Rejected</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>0</integer>
+			<key>userDisplayName</key>
+			<string>Stefan Forner</string>
+			<key>startDate</key>
+			<date>2013-01-08T15:40:30Z</date>
+			<key>endDate</key>
+			<date>2013-01-15T15:40:37Z</date>
+			<key>comment</key>
+			<string>Stefans Comment</string>
+			<key>createdOn</key>
+			<date>2013-01-08T15:41:06Z</date>
+			<key>demandType</key>
+			<string>Parentalleave</string>
+			<key>demandStatus</key>
+			<string>Approved</string>
+		</dict>
+	</array>
+</dict>
+</plist>

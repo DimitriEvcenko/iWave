@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Users</key>
+	<array>
+		<dict>
+			<key>telephoneNumber</key>
+			<string>0711/123456</string>
+			<key>userId</key>
+			<integer>817</integer>
+			<key>loginPassword</key>
+			<string>Pass1</string>
+			<key>loginName</key>
+			<string>user1</string>
+			<key>lastName</key>
+			<string>Nachname1</string>
+			<key>firstName</key>
+			<string>Name1</string>
+			<key>email</key>
+			<string>name1.nachname1@sidion.de</string>
+			<key>shortName</key>
+			<string>NNA</string>
+			<key>department</key>
+			<string>Baden Württemberg</string>
+			<key>lastLogin</key>
+			<date>2013-06-03T08:09:21Z</date>
+		</dict>
+		<dict>
+			<key>telephoneNumber</key>
+			<string>0711/654321</string>
+			<key>userId</key>
+			<integer>165</integer>
+			<key>loginPassword</key>
+			<string>Pass2</string>
+			<key>loginName</key>
+			<string>user2</string>
+			<key>lastName</key>
+			<string>Nachname2</string>
+			<key>firstName</key>
+			<string>Name2</string>
+			<key>email</key>
+			<string>name2.nachname2@sidion.de</string>
+			<key>shortName</key>
+			<string>NN2</string>
+			<key>department</key>
+			<string>Hessen</string>
+			<key>lastLogin</key>
+			<date>2013-06-01T08:09:21Z</date>
+		</dict>
+	</array>
+</dict>
+</plist>
